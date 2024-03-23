@@ -11,15 +11,15 @@ global.email ="samsamsun789@gmail.com"
 global.location="Harare,Zimbabwe."
 
 
-global.mongodb= process.env.MONGODB_URI || ""
+global.mongodb= process.env.MONGODB_URI || "mongodb+srv://mageerauldadbwy:12165670d12Pz**@cluster0.cujoza9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 global.allowJids= process.env.ALLOW_JID || "null" 
 global.blockJids= process.env.BLOCK_JID || "null"
 global.DATABASE_URL = process.env.DATABASE_URL || ""
 
 global.timezone= process.env.TZ || process.env.TIME_ZONE || "Zimbabwe/Harare";
-global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
-global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643";
-global.website=process.env.GURL || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643" ; 
+global.github=process.env.GITHUB|| "https://github.com/HandredThauzend/Phoenix-MD";
+global.gurl  =process.env.GURL  || "https://chat.whatsapp.com/HDCg2RV1xKfJTC0jCMQLvS";
+global.website=process.env.GURL || "https://chat.whatsapp.com/HDCg2RV1xKfJTC0jCMQLvS" ; 
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/file/d5b1c3544fedc23e11a06.jpg" ; // SET LOGO FOR IMAGE 
 
 
@@ -37,7 +37,7 @@ global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not resp
 global.gdbye = process.env.GOODBYE || "false"; 
 global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
 
-global.warncount = process.env.WARN_COUNT || 3
+global.warncount = process.env.WARN_COUNT || 1
 global.disablepm = process.env.DISABLE_PM || "false"
 global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in groups when public mode
 
@@ -72,20 +72,20 @@ module.exports = {
   HANDLERS: process.env.PREFIX  || ".",
   BRANCH  : process.env.BRANCH  || "main",
   VERSION : process.env.VERSION || "1.3.1",
-  caption : process.env.CAPTION || "Â©sá´œÊœá´€ÉªÊŸÂ²Â²Â¹-á´á´…" , // ```ã€Ž á´˜á´á´¡á´‡Ê€á´‡á´… Ê™Ê sá´œÊœá´€ÉªÊŸÂ²Â²Â¹-á´á´… ã€```", //*ã€Žsá´œÊ™sá´„Ê€ÉªÊ™á´‡ â€¢ sá´œÊœá´€ÉªÊŸ á´›á´‡á´„Êœã€*\n youtube.com/@suhailtechinfo0"),
+  caption : process.env.CAPTION || "EbSparco…" , // ```ã€Ž á´˜á´á´¡á´‡Ê€á´‡á´… Ê™Ê sá´œÊœá´€ÉªÊŸÂ²Â²Â¹-á´á´… ã€```", //*ã€Žsá´œÊ™sá´„Ê€ÉªÊ™á´‡ â€¢ sá´œÊœá´€ÉªÊŸ á´›á´‡á´„Êœã€*\n youtube.com/@suhailtechinfo0"),
  
   author : process.env.PACK_AUTHER|| "HandredThauzend",
-  packname: process.env.PACK_NAME || "â™¥ï¸",
+  packname: process.env.PACK_NAME || "EbSparco¸",
   botname : process.env.BOT_NAME  || "HandredThauzend…",
   ownername:process.env.OWNER_NAME|| "It's EbSparco",
 
 
   errorChat : process.env.ERROR_CHAT || "",
-  KOYEB_API : process.env.KOYEB_API  || "false",
+  KOYEB_API : process.env.KOYEB_API  || "postgres://koyeb-adm:5vSCm0UpwOzl@ep-sweet-scene-a2ezvfem.eu-central-1.pg.koyeb.app/koyebdb",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "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",
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY || "aff845e1-7513-44ce-ad88-b95debf06cfa",
   HEROKU_APP_NAME:process.env.HEROKU_APP_NAME|| "",
   antilink_values:process.env.ANTILINK_VALUES|| "all",
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
@@ -93,7 +93,7 @@ module.exports = {
   aitts_Voice_Id : process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY  || "",
   WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
-  LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(),
+  LANG: ( process.env.THEME || "EbSparco"  ).toUpperCase(),
 
 
 
@@ -124,14 +124,14 @@ module.exports = {
 
 
 global.rank = "updated"
-global.isMongodb = false; 
+global.isMongodb = true; 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename}'`);delete require.cache[file];	require(file); })
  
 
 // ========================= [ Disables in V.1.2.8 ] ===============================\\  
   //style : process.env.STYLE || "2",  // put '1' & "2" here to check bot styles
-  //readmessage:process.env.READ_MESSAGE|| "false",
+  //readmessage:process.env.READ_MESSAGE|| "true",
   //warncount: process.env.WARN_COUNT || 1,
   //userImages:process.env.USER_IMAGES|| "text",  // SET IMAGE AND VIDEO URL FOR BOT MENUS 
   //disablepm: process.env.DISABLE_PM || "false",
